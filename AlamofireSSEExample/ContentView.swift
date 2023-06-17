@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isLoading = false
     var body: some View {
         VStack {
             Button {
-                isLoading = true
                 NetworkService.request()
             } label: {
                 Text("Request")
